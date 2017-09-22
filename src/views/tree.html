@@ -1,0 +1,45 @@
+
+<div  class="page">
+    <legend class="legend">Binary Tree</legend>
+
+    <section class="left-content">
+        <div class="input">
+            <textarea  placeholder="Tree" data-bind="textInput: input" required ></textarea>
+        </div>
+        <div class="actions">
+            <button data-bind="click: create">Create Tree</button>
+            <button data-bind="click: random">Random Tree</button>
+            <button data-bind="click: sort">Sort Tree</button>
+        </div>
+    </section>
+
+    <section class="right-content">
+        <section id="network">
+
+        </section>
+        <div class="results">
+
+            <div class="result">
+                <label>Pre Order</label>
+                <span class="preOrder" data-bind="text:preOrderResult"> </span>
+            </div>
+
+            <div class="result">
+                <label>In Order</label>
+                <span class="inOrder" data-bind="text:inOrderResult"> </span>
+            </div>
+
+            <div class="result">
+                <label>Post Order</label>
+                <span class="postOrder" data-bind="text:postOrderResult"> </span>
+            </div>
+
+        </div>
+    </section>
+
+    <sticky params='name: "Note!", message: "The order to describe any tree, separate it by commas the node that you want to add; the tree is balance to the right; every new entry will force to add at the right, these tree only works with integers"' />
+</div>
+
+
+
+

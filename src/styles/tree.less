@@ -1,0 +1,116 @@
+// Set background image (pattern)
+
+*{
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  background: url(https://subtlepatterns.com/patterns/sativa.png) repeat fixed;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+}
+
+// Start styles in form
+
+tree-view {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.page {
+  padding: 5px;
+  width: 96%;
+  margin: 20px auto;
+  .left-content {
+    width: 35%;
+    float: left;
+  }
+
+  .right-content {
+    width: 65%;
+    float: right;
+  }
+
+  sticky {
+    position: absolute;
+    top: 65px;
+    right: 27px;
+    width: 250px;
+  }
+}
+
+
+.legend{
+  position: relative;
+  width: 100%;
+  display: block;
+  background: #FF7052;
+  padding: 15px;
+  color: #fff;
+  font-size: 20px;
+
+  &:after{
+    content: "";
+    background-image: url(http://simpleicon.com/wp-content/uploads/multy-user.png);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: 152px -16px;
+    opacity: 0.06;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+}
+
+.input{
+  position: relative;
+  width: 98%;
+  margin: 16px 0 16px 0;
+
+  span{
+    position: absolute;
+    display: block;
+    color: darken(#EDEDED, 10%);
+    left: 10px;
+    top: 8px;
+    font-size: 20px;
+  }
+
+  textarea{
+
+    width: 100%;
+    min-height: 500px;
+    padding: 10px 5px 10px 20px;
+    display: block;
+    border: 1px solid #EDEDED;
+    border-radius: 4px;
+    transition: 0.2s ease-out;
+    color: darken(#EDEDED, 30%);
+
+    &:focus{
+      padding: 10px 5px 10px 10px;
+      outline: 0;
+      border-color: #FF7052;
+    }
+  }
+}
+
+
+
+#network {
+  width: 100%;
+  height: 500px;
+  border: 1px solid lightgray;
+  margin-top: 17px;
+}
